@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/task37.css"/>
+		<!--<script src="js/task37.js" type="text/javascript" charset="utf-8"></script>-->
+	</head>
+	<body>
+		<header><a class="header-login" id="login" href="">登录</a></header>
+		<div class="mask" id="mask"></div> 
+		<div id="login-box">
+			<div class="login-content">
+				<div class="login-header">
+					<h3>登录</h3>
+					<input type="button" id="" class="close-button" value="x" />
+				</div>
+			</div>
+		</div>
+		<!--<div class="login-box">
+			<div class="login-header">
+				<input type="button" class="close-button" id="close-button" value="x" />
+			</div>-->
+		</div>
+		<script type="text/javascript">
+			window.onload = function () {
+				var oBtn = document.getElementById('login');
+				var oMask = document.getElementById('mask');
+				var oLoginBox = document.getElementById('login-box');
+				//获取页面的高度和宽度
+				var sHeight = document.documentElement.scrollHeight;
+				var sWidth = document.documentElement.scrollWidth;
+				//获取可视区域的高度
+				var wHeight = document.documentElement.clientHeight;
+				oMask.style.height = sHeight + 'px';
+				oMask.style.width = sWidth + 'px';
+				
+				oLoginBox.style.left = (sWidth - oLoginBox.offsetWidth) / 2 + "px";
+				oLoginBox.style.top = (wHeight - oLoginBox.offsetHeight) / 2 + "px";
+				oBtn.onclick = function () {
+					oMask.style.display = "block";
+					oLoginBox.style.display = "block";
+				}
+		        		
+			}
+		</script>
+	</body>
+</html>

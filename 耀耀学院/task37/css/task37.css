@@ -1,0 +1,91 @@
+
+body {
+	height: 2000px;
+}
+
+a{
+	text-decoration: none;
+}
+
+header {
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	background: #333;
+}
+.header-login {
+	float: right;
+	margin: 8px 40px;
+	color: #fff;
+	display: block;
+	font: bold 18px/30px "微软雅黑";
+	text-align: center;
+	line-height: 30px;
+	width: 80px;
+	height: 30px;
+	border: 1px solid #fff;
+	background: rgba(170,21,21,0.7);
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.mask {
+	background: #000;
+	opacity: 0.55;
+	filter: alpha(opacity=55);	
+	height: 1000px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0; 
+	z-index: 1000;
+	display: none;
+}
+
+/*.login-box {
+	margin: auto;
+	position: fixed;
+	top:0; left: 0; bottom: 0; right: 0;   
+	width: 300px;
+	height: 200px;
+	background: aqua;
+	z-index: 1001;
+}*/
+
+#login-box {
+	position: fixed;
+	left: 30%;
+	top: 30%;
+	z-index: 1001;
+	display: none;
+}
+
+.login-content {
+	width: 470px;
+	height: 280px;
+	background: #ccc;
+	position: relative;
+}
+
+.login-header {
+	height: 50px;
+	background: #4B0082;
+}
+
+.login-header h3 {
+	margin: 20px;
+	line-height: 50px;
+	color: #fff;
+}
+
+.close-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	font-size: 20px;
+	border: 1px solid indigo;
+	background-color: #fff;
+	
+}
